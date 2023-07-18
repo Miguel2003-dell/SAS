@@ -1,0 +1,59 @@
+
+.formula {
+  font-family: "Times New Roman", Times, serif;
+  text-align: left;
+  font-size: 2vmin;
+  line-height: 150%;
+}
+
+h1 {
+  text-align: center;
+
+  text-decoration: underline;
+}
+h2 {
+  text-align: center;
+ 
+}
+
+.direccion {
+  text-align: center;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.libro-foja-acta {
+  text-align: center;
+  padding: 0;
+}
+
+.libro-foja-acta2 {
+  text-align: center;
+  padding: 0;
+  font-size: 2vmin;
+  text-transform: uppercase;
+}
+
+.dato {
+  font-size: 2vmin;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.campo{
+  font-size: 2.5vmin;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.firmita{
+  text-align: center;
+  font-size: 1vmin;
+    }
+    .firmaa{
+      font-size: 2vmin;
+    }
+
+
