@@ -8,7 +8,7 @@ import axios from "axios";
 import { useParams, useNavigate } from "react-router-dom";
 import { toast, ToastContainer  } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
+import "../estilos/Bau.css";
 
 const initialState = {
   nombre: "",
@@ -106,6 +106,7 @@ function RegistroEliminar() {
 
   return (
     <>
+     <div className="formula">
       <Container>
       <ToastContainer />
         <Row>
@@ -115,21 +116,19 @@ function RegistroEliminar() {
         </Row>
 
         <Form onSubmit={handleSubmit}>
-          <Row>
-            <Col>
-              <p className="fs-3">Datos</p>
-            </Col>
-          </Row>
+        
 
           <Row className="mt-3 mb-3">
             <Col>
-              <p>
+              <p className="campo">
                 Nombre <br></br> {nombre}
               </p>
             </Col>
-
+            </Row>
+            
+          <Row className="mt-3 mb-3">
             <Col>
-              <p>
+              <p className="campo"> 
                 Lugar de nacimiento: <br></br> {lug_nac}
               </p>
             </Col>
@@ -137,7 +136,7 @@ function RegistroEliminar() {
 
           <Row className="mt-3 mb-3">
             <Col>
-              <p>
+              <p className="campo">
                 Fecha de nacimiento: <br></br> {fecha_nac}
               </p>
             </Col>
@@ -145,7 +144,7 @@ function RegistroEliminar() {
 
           <Row className="mt-3 mb-3">
             <Col>
-              <p>
+              <p className="campo"> 
                 Fecha de bautizo: <br></br> {fecha_bau}
               </p>
             </Col>
@@ -153,7 +152,7 @@ function RegistroEliminar() {
 
           <Row className="mt-3 mb-3">
             <Col>
-              <p>
+              <p className="campo">
                 Nombre del padre: <br></br>
                 {padre}
               </p>
@@ -161,7 +160,7 @@ function RegistroEliminar() {
           </Row>
           <Row className="mt-3 mb-3">
             <Col>
-              <p>
+              <p className="campo">
                 Nombre de la madre: <br></br>
                 {madre}
               </p>
@@ -170,7 +169,7 @@ function RegistroEliminar() {
 
           <Row className="mt-3 mb-3">
             <Col>
-              <p>
+              <p className="campo">
                 {" "}
                 Abuelo paterno: <br></br>
                 {abuelo_pa}
@@ -180,7 +179,7 @@ function RegistroEliminar() {
 
           <Row className="mt-3 mb-3">
             <Col>
-              <p>
+              <p className="campo">
                 {" "}
                 Abuela paterna: <br></br>
                 {abuela_pa}
@@ -190,7 +189,7 @@ function RegistroEliminar() {
 
           <Row className="mt-3 mb-3">
             <Col>
-              <p>
+              <p className="campo">
                 {" "}
                 Abuelo materno: <br></br>
                 {abuelo_ma}
@@ -200,7 +199,7 @@ function RegistroEliminar() {
 
           <Row className="mt-3 mb-3">
             <Col>
-              <p>
+              <p className="campo">
                 {" "}
                 Abuela materna: <br></br>
                 {abuela_ma}
@@ -209,7 +208,7 @@ function RegistroEliminar() {
           </Row>
           <Row className="mt-3 mb-3">
             <Col>
-              <p>
+              <p className="campo">
                 {" "}
                 Padrino de oleos: <br></br>
                 {padrino_oleos}
@@ -218,7 +217,7 @@ function RegistroEliminar() {
           </Row>
           <Row className="mt-3 mb-3">
             <Col>
-              <p>
+              <p className="campo">
                 {" "}
                 Padrino de pila: <br></br>
                 {padrino_pila}
@@ -227,7 +226,7 @@ function RegistroEliminar() {
           </Row>
           <Row className="mt-3 mb-3">
             <Col>
-              <p>
+              <p className="campo">
                 {" "}
                 Libro: <br></br>
                 {libro}
@@ -236,7 +235,7 @@ function RegistroEliminar() {
           </Row>
           <Row className="mt-3 mb-3">
             <Col>
-              <p>
+              <p className="campo">
                 {" "}
                 Foja: <br></br>
                 {foja}
@@ -245,7 +244,7 @@ function RegistroEliminar() {
           </Row>
           <Row className="mt-3 mb-3">
             <Col>
-              <p>
+              <p className="campo">
                 Acta: <br></br>
                 {acta}
               </p>
@@ -253,7 +252,7 @@ function RegistroEliminar() {
           </Row>
           <Row className="mt-3 mb-3">
             <Col>
-              <p>
+              <p className="campo">
                 {" "}
                 RC: <br></br>
                 {RC}
@@ -262,7 +261,7 @@ function RegistroEliminar() {
           </Row>
           <Row className="mt-3 mb-3">
             <Col>
-              <p>
+              <p className="campo">
                 Lugar: <br></br>
                 {lugar}
               </p>
@@ -270,7 +269,7 @@ function RegistroEliminar() {
           </Row>
           <Row className="mt-3 mb-3">
             <Col>
-              <p>
+              <p className="campo">
                 {" "}
                 Fecha: <br></br>
                 {fecha}
@@ -296,6 +295,7 @@ function RegistroEliminar() {
           </Row>
         </Form>
       </Container>
+      </div>
     </>
   );
 }

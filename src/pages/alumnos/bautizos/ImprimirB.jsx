@@ -153,7 +153,7 @@ function RegistroVizualizar() {
                   </p>
                 </Col>
               </Row>
-              <br></br>
+          
 
               <Row className="mt-3 mb-3">
                 <Col>
@@ -187,7 +187,7 @@ function RegistroVizualizar() {
                   </p>
                 </Col>
               </Row>
-              <br></br>
+       
 
               <Row className="mt-3 mb-3">
                 <Col>
@@ -206,8 +206,8 @@ function RegistroVizualizar() {
                   </p>
                 </Col>
               </Row>
-              <br></br>
-              <br></br>
+              
+              
 
               <Row className="mt-3 mb-3">
                 <Col>

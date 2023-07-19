@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { Route, Routes, Navigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 
 import BarraSuperior from "./components/BarraSuperior";
 import Home from "./pages/Home";
@@ -61,11 +62,11 @@ function Login({ setIsLoggedIn }) {
 
   return (
     <>
-      <div className="d-flex vh-100 justify-content-center bg-primary align-items-center">
-        <div className="p-3 bg-white w-25">
+      <div className="d-flex vh-100 justify-content-center bg-secondary align-items-center">
+        <div className="p-3 bg-red w-25">
           <form onSubmit={handleSubmit}>
             <div className="mb-3">
-              <label htmlFor="text">Email</label>
+              <label htmlFor="t.text-white" className="texto">Usuario</label>
               <input
                 type="text"
                 placeholder="Enter User"
@@ -74,8 +75,8 @@ function Login({ setIsLoggedIn }) {
               />
             </div>
             <div className="mb-3">
-              <label htmlFor="password">Password</label>
-              <input
+              <label htmlFor="password" className="texto">Password</label>
+              <input 
                 type="password"
                 placeholder="Enter Password"
                 className="form-control"
@@ -83,7 +84,7 @@ function Login({ setIsLoggedIn }) {
               />
             </div>
             {errorMessage && <p  className="text-danger" style={{ paddingLeft: "5vmin" }}>{errorMessage}</p>}
-            <button className="btn btn-success">Login</button>
+            <button className="btn btn-primary">Login</button>
           </form>
         </div>
       </div>

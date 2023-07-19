@@ -8,7 +8,7 @@ import axios from "axios";
 import { useParams, useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
+import "../estilos/M.css";
 
 
 const initialState = {
@@ -76,6 +76,7 @@ function RegistroEliminar() {
 
   return (
     <>
+     <div className="impresion">
       <Container>
       <ToastContainer />
         <Row>
@@ -87,19 +88,20 @@ function RegistroEliminar() {
         <Form onSubmit={handleSubmit}>
           <Row>
             <Col>
-              <p className="fs-3">Datos</p>
+              <p className="campo">Datos</p>
             </Col>
           </Row>
 
-          <Row className="mt-3 mb-3">
+          <Row className="campo">
             <Col>
-              <p>
+              <p className="campo">
                 Fecha <br></br> {fecha}
               </p>
             </Col>
-
+            </Row>
+            <Row className="campo">
             <Col>
-              <p>
+              <p className="campo">
                 Señor: <br></br> {hombre}
               </p>
             </Col>
@@ -107,7 +109,7 @@ function RegistroEliminar() {
 
           <Row className="mt-3 mb-3">
             <Col>
-              <p>
+              <p className="campo">
                 Señorita: <br></br> {mujer}
               </p>
             </Col>
@@ -115,7 +117,7 @@ function RegistroEliminar() {
 
           <Row className="mt-3 mb-3">
             <Col>
-              <p>
+              <p className="campo">
                 Primer testigo: <br></br> {testigo1}
               </p>
             </Col>
@@ -123,7 +125,7 @@ function RegistroEliminar() {
 
           <Row className="mt-3 mb-3">
             <Col>
-              <p>
+              <p className="campo">
                 Segundo testigo: <br></br>
                 {testigo2}
               </p>
@@ -132,7 +134,7 @@ function RegistroEliminar() {
 
           <Row className="mt-3 mb-3">
             <Col>
-              <p>
+              <p className="campo">
                 Nombre del padre: <br></br>
                 {padre}
               </p>
@@ -157,6 +159,7 @@ function RegistroEliminar() {
           </Row>
         </Form>
       </Container>
+      </div>
     </>
   );
 }

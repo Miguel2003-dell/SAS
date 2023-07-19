@@ -215,12 +215,8 @@ function RegistroEliminar() {
                     </p>
                   </Col>
                 </Row>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
+              
+               
               </Form>
             </Container>
           </div>
