@@ -162,6 +162,13 @@ function RegistroEliminar() {
                   PBRO.LIC.MANUEL BERNARDO AGUIRRE MARQUEZ
                 </p>
                 <br></br> <br></br> <br></br>
+                <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
               </div>
             </Form>
           </Container>

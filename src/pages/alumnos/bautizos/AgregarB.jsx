@@ -109,7 +109,7 @@ function BautizoAgregar() {
                 <Form.Control
                   placeholder="Nombre"
                   name="nombre"
-                  type="date"
+                  type="text"
                   value={nombre}
                   onChange={handleInputChange}
                   required
@@ -154,7 +154,7 @@ function BautizoAgregar() {
                 <Form.Control
                   name="fecha_bau"
                   placeholder="Fecha de bautizo"
-                  type="fecha_bau"
+                  type="date"
                   value={fecha_bau}
                   onChange={handleInputChange}
                   required

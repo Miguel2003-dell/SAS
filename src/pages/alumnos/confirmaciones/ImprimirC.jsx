@@ -213,6 +213,10 @@ function RegistroEliminar() {
                     <p className="campo">
                       Fecha de realización:<span className="datos">{fecha_realiz}</span>
                     </p>
+                    <br />
+              <br />
+              <br />
+              <br />
                   </Col>
                 </Row>
               

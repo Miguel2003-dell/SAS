@@ -273,7 +273,9 @@ function RegistroVizualizar() {
               <p className="nota">
                 Notas marginales:_____________________________________________
               </p>
-       
+              <br />
+              <br />
+              <br />       
             </Form>
           </Container>
         </div>

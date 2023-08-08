@@ -100,7 +100,7 @@ function ConfirmacionAgregar() {
                 <Form.Control
                   placeholder="Fecha"
                   name="fecha_conf"
-                  type="text"
+                  type="date"
                   value={fecha_conf}
                   onChange={handleInputChange}
                   required
@@ -279,6 +279,7 @@ function ConfirmacionAgregar() {
                 <Form.Control
                   placeholder="Fecha de realización"
                   name="fecha_realiz"
+                  type="date"
                   value={fecha_realiz}
                   onChange={handleInputChange}
                   required
